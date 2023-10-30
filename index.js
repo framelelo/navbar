@@ -2,16 +2,17 @@ const navbar = document.getElementById('navbar')
 const scrollLevel = window.scrollY;
 
 
-window.addEventListener('scroll',()=>{
+
+window.addEventListener('scroll',(e) =>{
   const actualLevel = window.scrollY;
   
-console.log(actualLevel);
   if(actualLevel > scrollLevel) {
-    navbar.style.opacity ='0';
+    navbar.style.top ='-60px';
   }
   else {
-    navbar.style.opacity ='1';
+    navbar.style.top ='0';
   }
 
 });
+
 
